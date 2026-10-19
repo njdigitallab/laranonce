@@ -1,0 +1,29 @@
+{
+    "name": "njdigitallab/laranonce",
+    "description": "A nounce generator for Laravel applications.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "NjDigitalLab\\Laranonce\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jenry Ollivierre",
+            "email": "jenry@jenryollivierre.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NjDigitalLab\\Laranonce\\Providers\\AppServiceProvider"
+            ],
+            "aliases": {
+                "Laranonce": "NjDigitalLab\\Laranonce\\Laranonce"
+            }
+        }
+    }
+}
