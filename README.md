@@ -78,7 +78,7 @@ After time, unchecked nonces will expire and will take up space in your database
 use App\Console\Commands\SendEmailsCommand;
 use Illuminate\Support\Facades\Schedule;
 
-Schedule::command('nonce:prune')->daily();
+Schedule::command('laranonce:prune')->daily();
 ```
 
 See [Laravel Docs](https://laravel.com/framework/docs/13.x/scheduling) for more information on task scheduling.
